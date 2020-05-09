@@ -22,17 +22,19 @@ html {
 }
 
 #contact {
-    background: #d1e8e2;
+    background: whitesmoke;
     height: 100vh;
     color: black;
+    border-bottom: 1px solid #d1e8e2;
 }
 
 #trusted-by {
+    background: whitesmoke;
     height: 100vh;
 }
 
 .card-group {
-    margin-top: 13%;
+    margin-top: 7%;
 }
 
 #portfolio .row {
@@ -87,6 +89,13 @@ div .jumbotron h5 {
 
 .home-btn {
     color: #2c3531;
+    font-family: Raleway;
+    font-weight: 400;
+    transition: ease-in 400ms;
+    -webkit-transition: ease-in 400ms;
+    -moz-transition: ease-in 400ms;
+    -ms-transition: ease-in 400ms;
+    -o-transition: ease-in 400ms;
 }
 
 .home-btn:hover {
@@ -184,6 +193,15 @@ ul>li>.nav-link {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+#trusted-by>.container>h1 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 2em;
+    padding-top: 7%;
+    color: #116466;
 }
 
 #contact>.container>h1 {
