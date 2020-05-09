@@ -16,6 +16,6 @@ app.get('/samples/:id', function(req, res) {
     res.render('show');
 });
 
-app.listen(8080, function() {
+app.listen(process.env.PORT, function() {
     console.log('Server started!');
 });
