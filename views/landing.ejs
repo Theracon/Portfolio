@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ashraf Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@300;400;700;900&family=Righteous&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="home" class="container-fluid">
+        <%- include ('partials/social') %>
+            <div class="row">
+                <div class="col-md-1 col-xs-12">
+                    <%- include ('partials/header') %>
+                </div>
+                <div class="col-md-10 col-xs-12">
+                    <div class="jumbotron">
+                        <p><i class="fas fa-laptop-code"></i></p>
+                        <h1>Hi, I'm Ash</h1>
+                        <h5>Front End/Back End Web Developer</h5>
+                        <hr />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <br /><br />
+                        <p>
+                            <a class="btn btn-outline-dark btn-lg home-btn" href="#portfolio">Portfolio</a
+              >
+              <a class="btn btn-outline-dark btn-lg home-btn" href="#contact"
+                >Get in Touch
+              </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div id="row" class="row">
+                            <div class="col-md-3 h-w">1</div>
+                            <div class="col-md-3 h-w">2</div>
+                            <div class="col-md-3 h-w">3</div>
+                            <div class="col-md-3 h-w">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="skills" class="container-fluid">
+        <div class="container">
+            <h1>Technology Stack</h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="data:image/png;base64,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"
+                        class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://miro.medium.com/max/3600/1*6ahbWjp_g9hqhaTDSJOL1Q.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://miro.medium.com/max/824/1*9RqBEDU9Mbg6XM8O6d7Q9A.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://www.codeforbeginner.com/wp-content/uploads/2017/02/jquery.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://cdn-media-1.freecodecamp.org/images/1*TnsFDs-DEye722CrQXjv8w.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="data:image/png;base64,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"
+                        class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/node-js-main.jpg" class="card-img-top" alt="..." />
+                </div>
+                <div class="card">
+                    <img src="https://transang.me/content/images/2019/11/ExpressJS.png" class="card-img-top" alt="..." />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid">
+        <h1>Portfolio</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 portfolio-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="portfolio-img border border-primary" src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mac computer Photo." />
+                        </div>
+                        <div class="col-md-6 portfolio-item-desc">
+                            <h4><strong>Demo Shopping Web App</strong></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h5><strong>Stack</strong></h5>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-node"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 portfolio-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="portfolio-img border border-primary" src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60 " alt="Mac computer Photo." />
+                        </div>
+                        <div class="col-md-6 portfolio-item-desc">
+                            <h4><strong>Demo Shopping Web App</strong></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h5>
+                                        <strong>Stack</strong>
+                                    </h5>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-node"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 portfolio-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="portfolio-img border border-primary" src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mac computer Photo." />
+                        </div>
+                        <div class="col-md-6 portfolio-item-desc">
+                            <h4><strong>Demo Shopping Web App</strong></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h5><strong>Stack</strong></h5>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-node"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid">
+        <div class="container">
+            <h1>Contact me</h1>
+            <form id="form" action="#">
+                <div class="form-group">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email-input" required />
+                </div>
+                <div class="form-group">
+                    <label for="number-input">Phone (Optional)</label>
+                    <input type="number" class="form-control form-control-lg" id="number-input" />
+                </div>
+                <div class="form-group">
+                    <label for="textarea-input">Message</label>
+                    <textarea class="form-control form-control-lg" id="textarea-input" rows="5"></textarea>
+                </div>
+                <button style="margin: auto; display: block; margin-top: 5%;" type="button" class="btn btn-primary btn-lg">
+            Submit
+          </button>
+            </form>
+        </div>
+    </div>
+    <div id="trusted-by" class="container-fluid">
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://pbs.twimg.com/profile_images/1191676540972683264/o-pWiAzN_400x400.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://pbs.twimg.com/profile_images/1191676540972683264/o-pWiAzN_400x400.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This card has supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://pbs.twimg.com/profile_images/1191676540972683264/o-pWiAzN_400x400.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ('partials/footer') %>
+</body>
+
+</html>
